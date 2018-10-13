@@ -288,7 +288,6 @@ class DocumentGenerator:
         self.components_config = settings['components']
         self.apps = []
 
-
         for app in apps.app_configs.values():
             if app.name.split('.')[:len(self.namespace)] != self.namespace:
                 continue
@@ -333,7 +332,6 @@ class DocumentGenerator:
                     'modules': self.apps,
                 }
             ))
-
 
     def create_document_tree(self):
         for app in self.apps:

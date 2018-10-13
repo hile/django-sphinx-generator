@@ -1,21 +1,23 @@
 
 import os
 from setuptools import find_packages, setup
+from django_sphinx_generator import __version__
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
 
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
+
 setup(
     name='django_sphinx_generator',
-    version='1.0',
+    version=__version__,
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',
     description='Generate a sphinx documentation tree of django models and other classes.',
     long_description=README,
-    url='https://www.github.com/codento/django-sphinx-generator',
+    url='https://github.com/hile/django-sphinx-generator',
     author='Ilkka Tuohela',
     author_email='ilkka.tuohela@codento.com',
     classifiers=[
