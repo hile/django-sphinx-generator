@@ -20,6 +20,9 @@ setup(
     url='https://github.com/hile/django-sphinx-generator',
     author='Ilkka Tuohela',
     author_email='ilkka.tuohela@codento.com',
+    install_requires=(
+        'sphinx',
+    ),
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
